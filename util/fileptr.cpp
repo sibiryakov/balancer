@@ -1,5 +1,5 @@
 #include "fgood.h"
-#include <system/file.h>
+#include <sys/file.h>
 
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -8,7 +8,7 @@
 # include <io.h>
 #endif
 
-STATIC_ASSERT(sSet == SEEK_SET && sCur == SEEK_CUR && sEnd == SEEK_END);
+// STATIC_ASSERT(sSet == SEEK_SET && sCur == SEEK_CUR && sEnd == SEEK_END);
 
 i64 TFILEPtr::length() const {
     int fd = fileno(m_file);

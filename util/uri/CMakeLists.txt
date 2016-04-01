@@ -12,7 +12,7 @@ PEERDIR(
 )
 
 IF (NOT WIN32)
-    SET(WERROR yes)
+#    SET(WERROR yes)
 ENDIF (NOT WIN32)
 
 IF (SUN)
